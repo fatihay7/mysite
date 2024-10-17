@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Sitemi Değerlendirin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="city-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkımda.html">Hakkımda</a>
+        <a href="iletişim.html">İletişim</a>
+        <a href="projeler.html">Projeler</a>
+        <a href="memnuniyet.html">Memnuniyet</a>
+    </div>
+    <div class="container">
+        <h1>Web Sitemi Değerlendirin</h1>
+        <form action="#" method="post">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Web sitemizin tasarımı hakkında ne düşünüyorsunuz?</label>
+            <div class="radio-group">
+                <input type="radio" id="excellent" name="design" value="Harika">
+                <label for="excellent">Çok iyi</label>
+                
+                <input type="radio" id="good" name="design" value="İyi">
+                <label for="good">İyi</label>
+                
+                <input type="radio" id="average" name="design" value="Ortalama">
+                <label for="average">Ortalama</label>
+
+                <input type="radio" id="poor" name="design" value="Kötü">
+                <label for="poor">Kötü</label>
+            </div>
+
+            <label for="usability">Kullanılabilirlik puanınız (1-5):</label>
+            <select id="usability" name="usability">
+                <option value="1">1 - Çok Kötü</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Çok İyi</option>
+            </select>
+
+            <label for="feedback">Geri Bildirim:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Yorumlarınızı buraya yazın..."></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
